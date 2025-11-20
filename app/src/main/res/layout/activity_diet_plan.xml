@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvDietTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🥗 Diet Plan"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryColor"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Goal -->
+        <TextView
+            android:id="@+id/tvGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal: -"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Breakfast Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diet_card_bg"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/tvBreakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍳 Breakfast"
+                android:textSize="22sp"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBreakfastItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Lunch Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diet_card_bg"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/tvLunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍛 Lunch"
+                android:textSize="22sp"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvLunchItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Snacks Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diet_card_bg"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/tvSnacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍎 Snacks"
+                android:textSize="22sp"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSnacksItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Dinner Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diet_card_bg"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/tvDinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍽 Dinner"
+                android:textSize="22sp"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDinnerItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Water Intake Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diet_card_bg"
+            android:padding="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvWater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💧 Daily Water Intake"
+                android:textSize="22sp"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvWaterValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

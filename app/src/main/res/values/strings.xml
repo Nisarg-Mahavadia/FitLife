@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- App -->
+    <string name="app_name">FitLife</string>
+
+    <!-- Exercise Page -->
+    <string name="exercise_animation">Exercise Animation</string>
+    <string name="exercise_name">Exercise Name</string>
+    <string name="default_timer">00:60</string>
+    <string name="progress_default">1 / 6</string>
+    <string name="exit">Exit</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+    <!-- Workout Categories -->
+    <string name="workout_categories">Workout Categories</string>
+    <string name="full_body">Full Body</string>
+    <string name="core">Core</string>
+    <string name="arms">Arms</string>
+    <string name="chest">Chest</string>
+    <string name="legs">Legs</string>
+    <string name="back">Back</string>
+    <string name="shoulders">Shoulders</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+
+    <!-- BMI Calculator -->
+    <string name="enter_height">Enter Height (cm)</string>
+    <string name="enter_weight">Enter Weight (kg)</string>
+    <string name="calculate_bmi">Calculate BMI</string>
+    <string name="download_diet_plan">Download Diet Plan (PDF)</string>
+
+    <!-- Login -->
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="dont_have_account">Don’t have an account? Sign Up</string>
+
+    <!-- Signup -->
+    <string name="signup_title">Sign Up</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="have_account_login">Already have an account? Login</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+
+
+    <!-- Drawer Menu -->
+    <string name="profile">Profile</string>
+    <string name="workout_categories_dropdown">Workout Categories</string>
+    <string name="logout">Logout</string>
+    <string name="exercise_plan_title">Recommended Weekly Plan</string>
+    <string name="day_plan_format">%1$s: %2$s</string>
+
+
+
+</resources>

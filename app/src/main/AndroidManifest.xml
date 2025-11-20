@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project">
+
+        <!-- Login Activity as Launcher -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sign Up Activity -->
+        <activity android:name=".SignUpActivity" />
+
+        <!-- Home Activity (after login) -->
+        <activity android:name=".HomeActivity" />
+
+        <!-- Full Body Workout Page -->
+        <activity android:name=".FullBodyActivity" />
+
+        <!-- New Exercise Page (workout) -->
+        <activity android:name=".ExerciseActivity" />
+
+        <!-- Transition / Rest Page -->
+        <activity android:name=".TransitionActivity" />
+
+        <!-- Workout Completion Page -->
+        <activity android:name=".CompletionActivity" />
+        <activity android:name=".BMICalculatorActivity" />
+        <activity android:name=".ArmsActivity" />
+        <activity android:name=".BackActivity" />
+        <activity android:name=".ChestActivity" />
+        <activity android:name=".CoreActivity" />
+        <activity android:name=".LegsActivity" />
+        <activity android:name=".ShouldersActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".DietPlanActivity" />
+        <activity android:name=".CustomizePlanActivity" />
+        <activity android:name=".WeeklyPlanActivity"/>
+        <activity android:name=".EditProfileActivity"/>
+
+
+    </application>
+</manifest>

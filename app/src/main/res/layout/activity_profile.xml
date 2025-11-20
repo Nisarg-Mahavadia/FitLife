@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Profile Icon -->
+
+
+        <!-- Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center"
+            android:background="@drawable/white_card_bg"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/profile_user"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: -"
+                android:textSize="18sp"
+                android:layout_marginVertical="6dp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: -"
+                android:textSize="18sp"
+                android:layout_marginVertical="6dp" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: -"
+                android:textSize="18sp"
+                android:layout_marginVertical="6dp" />
+
+            <TextView
+                android:id="@+id/tvAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age: -"
+                android:textSize="18sp"
+                android:layout_marginVertical="6dp" />
+
+            <TextView
+                android:id="@+id/tvBmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI: -"
+                android:textSize="18sp"
+                android:layout_marginVertical="6dp" />
+            <Button
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EDIT PROFILE"
+                android:textAllCaps="true"
+                android:background="#FF9800"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:padding="12dp" />
+
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:textAllCaps="true"
+                android:background="#0A66FF"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="24dp"
+                android:padding="12dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

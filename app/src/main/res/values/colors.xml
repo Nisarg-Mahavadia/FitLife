@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ======================= -->
+    <!-- BASIC SYSTEM COLORS     -->
+    <!-- ======================= -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ======================= -->
+    <!-- MATERIAL PURPLE (OLD)   -->
+    <!-- (KEEP for compatibility)-->
+    <!-- ======================= -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+
+    <!-- ======================= -->
+    <!-- MATERIAL TEAL           -->
+    <!-- ======================= -->
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- ======================= -->
+    <!-- PROFESSIONAL THEME      -->
+    <!-- ======================= -->
+    <color name="primaryColor">#0A73FF</color>       <!-- Clean Blue (ActionBar, Buttons) -->
+    <color name="primaryDarkColor">#004FCC</color>   <!-- Darker Blue (StatusBar) -->
+    <color name="accentColor">#FFC107</color>        <!-- Gold Accent -->
+
+    <!-- ======================= -->
+    <!-- TEXT COLORS             -->
+    <!-- ======================= -->
+    <color name="textPrimary">#333333</color>        <!-- Dark Gray for text -->
+    <color name="textHint">#888888</color>           <!-- Soft hint color -->
+
+    <!-- ======================= -->
+    <!-- BUTTON COLORS           -->
+    <!-- ======================= -->
+    <color name="button_bg">#0A73FF</color>          <!-- Same as primary -->
+    <color name="button_pressed">#004FCC</color>     <!-- Darker shade -->
+
+    <!-- ======================= -->
+    <!-- OTHER COLORS            -->
+    <!-- ======================= -->
+    <color name="holo_blue_dark">#1976D2</color>     <!-- For legacy compatibility -->
+    <color name="backgroundLight">#F8F9FA</color>
+
+</resources>

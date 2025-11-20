@@ -1,0 +1,26 @@
+<resources>
+    <style name="Theme.Project" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Action Bar Colors -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+
+        <!-- Action Bar Text Color -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+        <!-- Action Bar Background -->
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+    </style>
+
+    <style name="CustomActionBarStyle" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/primaryColor</item>
+        <item name="titleTextStyle">@style/CustomActionBarTitle</item>
+    </style>
+
+    <style name="CustomActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

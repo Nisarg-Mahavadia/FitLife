@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- PROFILE -->
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile" />
+
+    <!-- WORKOUT DROPDOWN GROUP -->
+    <item
+        android:id="@+id/nav_workout_group"
+        android:title="Workout Categories">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_fullbody"
+                android:title="Full Body" />
+
+            <item
+                android:id="@+id/nav_core"
+                android:title="Core" />
+
+            <item
+                android:id="@+id/nav_arms"
+                android:title="Arms" />
+
+            <item
+                android:id="@+id/nav_chest"
+                android:title="Chest" />
+
+            <item
+                android:id="@+id/nav_legs"
+                android:title="Legs" />
+
+            <item
+                android:id="@+id/nav_back"
+                android:title="Back" />
+
+            <item
+                android:id="@+id/nav_shoulders"
+                android:title="Shoulders" />
+
+        </menu>
+    </item>
+
+    <!-- LOGOUT -->
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout" />
+
+</menu>

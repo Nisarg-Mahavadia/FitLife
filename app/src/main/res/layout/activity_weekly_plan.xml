@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exercise_plan_title"
+            android:textSize="24sp"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Card Template -->
+        <LinearLayout
+            android:id="@+id/cardMon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvMon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Monday:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardTue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvTue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Tuesday:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardWed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvWed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Wednesday:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardThu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvThu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Thursday:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardFri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvFri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Friday:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardSat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvSat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Saturday:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardSun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvSun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Sunday:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCustomizeWeeklyPlan"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/primaryColor"
+            android:text="Customize Weekly Plan"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp" />
+
+    </LinearLayout>
+
+</ScrollView>
