@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/backgroundLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Welcome -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, User"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/textWelcome"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- BMI Circle + Status Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <com.marwadiuniversity.fitlife.BMICircleView
+                android:id="@+id/bmiCircle"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: -"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Weight Goal Switch -->
+        <LinearLayout
+            android:id="@+id/goalSwitchContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/switch_bg"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tvGoalLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Weight Loss / Weight Gain"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E" />
+
+            <Switch
+                android:id="@+id/switchGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/primaryColor"
+                android:trackTint="@color/primaryDarkColor" />
+        </LinearLayout>
+
+        <!-- Target Weight Label -->
+        <TextView
+            android:id="@+id/tvTargetLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Your Target Weight"
+            android:textSize="20sp"
+            android:textColor="@color/textHighlight"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <!-- Target Weight Input -->
+        <EditText
+            android:id="@+id/etTargetBMI"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter Target Weight"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textHint"
+            android:background="@drawable/edittext_bg"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Save Target Weight -->
+        <Button
+            android:id="@+id/btnSaveTarget"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SAVE TARGET WEIGHT"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#34495E"
+            android:background="@drawable/outlined_button"
+            android:layout_marginTop="15dp"/>
+
+
+        <!-- Recommended Label -->
+        <TextView
+            android:id="@+id/tvRecommended"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Personalized Plan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textSection"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+        <!-- Diet + Exercise Buttons Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <!-- Diet Plan Button -->
+            <LinearLayout
+                android:id="@+id/btnViewDiet"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/outlined_button"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/diet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diet Plan"
+                    android:textColor="#34495E"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <!-- Workout Plan Button -->
+            <LinearLayout
+                android:id="@+id/btnViewExercises"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/outlined_button"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/plan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Workout Plan"
+                    android:textColor="#34495E"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

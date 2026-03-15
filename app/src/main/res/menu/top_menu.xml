@@ -3,9 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_profile"
-        android:icon="@drawable/ic_profile"
-        android:title="@string/profile"
-        app:showAsAction="always" />
+        android:id="@+id/action_about"
+        android:icon="@drawable/about_us"
+        android:title="@string/about_us"
+        app:showAsAction="always"/>
 
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/user"
+        android:title="@string/profile"
+        app:showAsAction="always"/>
 </menu>

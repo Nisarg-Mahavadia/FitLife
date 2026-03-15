@@ -53,6 +53,14 @@
     <string name="exercise_plan_title">Recommended Weekly Plan</string>
     <string name="day_plan_format">%1$s: %2$s</string>
 
+    <string name="about_us">About Us</string>
+    <string name="analysis_tab">Your Analysis</string>
+    <string name="tasks_tab">Daily Tasks</string>
+    <string name="project_guide">Project Guide</string>
+    <string name="assistant_professor">Assistant Professor</string>
+    <string name="department_computer_engineering">Computer Engineering</string>
+
+
 
 
 </resources>

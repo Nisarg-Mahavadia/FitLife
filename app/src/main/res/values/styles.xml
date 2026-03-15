@@ -16,12 +16,13 @@
         <item name="android:layout_marginTop">10dp</item>
     </style>
     <style name="ProfileItemStyle">
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/textPrimary</item>
         <item name="android:layout_marginBottom">12dp</item>
     </style>
+
     <style name="DayCardStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">65dp</item>
@@ -35,6 +36,15 @@
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
+
+    <style name="Theme.Project.Exercise" parent="Theme.Project">
+        <!-- Disable edge-to-edge ONLY here -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@color/primaryColor</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
 
 
 

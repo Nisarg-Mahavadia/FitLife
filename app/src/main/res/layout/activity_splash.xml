@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- ✅ LOGO PERFECTLY CENTERED -->
+    <ImageView
+        android:id="@+id/imgSplashLogo"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/marwadi_logo"
+        android:contentDescription="University Logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ✅ SMALL TEXT ABOVE BIG TEXT (both at bottom) -->
+    <TextView
+        android:id="@+id/tvPoweredMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powered by"
+        android:textSize="13sp"
+        android:textColor="#777777"
+        app:layout_constraintBottom_toTopOf="@id/tvUniversityName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ✅ BIG BOLD UNIVERSITY NAME AT VERY BOTTOM -->
+    <TextView
+        android:id="@+id/tvUniversityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marwadi University"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

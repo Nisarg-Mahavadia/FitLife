@@ -1,36 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#F8F8F8">
 
-    <!-- Scrollable Exercise List -->
-    <ScrollView
-        android:id="@+id/scrollViewExercises"
+    <!-- ✅ REAL TOOLBAR (FIXES STATUS BAR ISSUE) -->
+    <include
+        layout="@layout/toolbar_simple"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/btnStart"
-        android:padding="16dp">
+        android:layout_height="wrap_content" />
 
-        <LinearLayout
-            android:id="@+id/linearLayoutExercises"
+    <!-- ✅ CONTENT AREA -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Scrollable Exercise List -->
+        <ScrollView
+            android:id="@+id/scrollViewExercises"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnStart"
+            android:padding="16dp">
 
-    <!-- START Button -->
-    <Button
-        android:id="@+id/btnStart"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="16dp"
-        android:text="START"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:background="@drawable/start_button_bg"
-        android:textAllCaps="true" />
+            <LinearLayout
+                android:id="@+id/linearLayoutExercises"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
 
-</RelativeLayout>
+        <!-- START Button -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:text="START"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/start_button_bg"
+            android:textAllCaps="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

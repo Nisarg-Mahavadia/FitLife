@@ -2,56 +2,62 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
 
-        <!-- Login Activity as Launcher -->
+        <!-- ✅ WELCOME SCREEN (Launcher Activity) -->
         <activity
-            android:name=".LoginActivity"
+            android:name=".WelcomeActivity"
             android:exported="true">
+
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <!-- Sign Up Activity -->
-        <activity android:name=".SignUpActivity" />
+        <!-- LOGIN -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"/>
 
-        <!-- Home Activity (after login) -->
-        <activity android:name=".HomeActivity" />
+        <!-- SIGNUP -->
+        <activity android:name=".SignUpActivity"/>
 
-        <!-- Full Body Workout Page -->
-        <activity android:name=".FullBodyActivity" />
+        <!-- HOME -->
+        <activity android:name=".HomeActivity"/>
 
-        <!-- New Exercise Page (workout) -->
-        <activity android:name=".ExerciseActivity" />
+        <!-- Workouts -->
+        <activity android:name=".FullBodyActivity"/>
+        <activity
+            android:name=".ExerciseActivity"
+            android:theme="@style/Theme.Project.Exercise" />
+        <activity android:name=".TransitionActivity"/>
+        <activity android:name=".CompletionActivity"/>
+        <activity android:name=".BMICalculatorActivity"/>
+        <activity android:name=".ArmsActivity"/>
+        <activity android:name=".BackActivity"/>
+        <activity android:name=".ChestActivity"/>
+        <activity android:name=".CoreActivity"/>
+        <activity android:name=".LegsActivity"/>
+        <activity android:name=".ShouldersActivity"/>
 
-        <!-- Transition / Rest Page -->
-        <activity android:name=".TransitionActivity" />
-
-        <!-- Workout Completion Page -->
-        <activity android:name=".CompletionActivity" />
-        <activity android:name=".BMICalculatorActivity" />
-        <activity android:name=".ArmsActivity" />
-        <activity android:name=".BackActivity" />
-        <activity android:name=".ChestActivity" />
-        <activity android:name=".CoreActivity" />
-        <activity android:name=".LegsActivity" />
-        <activity android:name=".ShouldersActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".DietPlanActivity" />
-        <activity android:name=".CustomizePlanActivity" />
-        <activity android:name=".WeeklyPlanActivity"/>
+        <!-- Profile + Plans -->
+        <activity android:name=".ProfileActivity"/>
         <activity android:name=".EditProfileActivity"/>
-
+        <activity android:name=".DietPlanActivity"/>
+        <activity android:name=".CustomizePlanActivity"/>
+        <activity android:name=".WeeklyPlanActivity"/>
+        <activity android:name=".AboutUsActivity"/>
 
     </application>
 </manifest>

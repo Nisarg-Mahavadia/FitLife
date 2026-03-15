@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundLight">
+<include layout="@layout/toolbar_simple"/>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="#F2F4F7">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -197,9 +204,11 @@
             android:layout_height="55dp"
             android:text="SAVE PLAN"
             android:textStyle="bold"
-            android:textColor="@android:color/white"
-            android:backgroundTint="#0A66FF"
+            android:textColor="#000000"
+            android:background="@drawable/outlined_button"
             android:layout_marginTop="20dp" />
+
     </LinearLayout>
 
 </ScrollView>
+</LinearLayout>

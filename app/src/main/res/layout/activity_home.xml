@@ -1,118 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@color/backgroundLight">
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_simple" />
 
-    <LinearLayout
+    <!-- Divider under ActionBar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0D0D0"/>
+
+    <!-- Tabs -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:background="@color/lightBlueTop"
+        app:tabIndicatorColor="@color/primaryColor"
+        app:tabIndicatorHeight="3dp"
+        app:tabTextColor="@color/textPrimary"
+        app:tabSelectedTextColor="@color/primaryColor"
+        app:tabMode="fixed"
+        app:tabGravity="fill"/>
 
-        <!-- Welcome -->
-        <TextView
-            android:id="@+id/tvWelcome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome, User"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:textColor="@color/primaryColor"
-            android:layout_marginBottom="20dp" />
+    <!-- Pager -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerHome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
-        <!-- Circular BMI Gauge -->
-        <com.example.project.BMICircleView
-            android:id="@+id/bmiCircle"
-            android:layout_width="270dp"
-            android:layout_height="270dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp" />
-
-        <!-- BMI Status -->
-        <TextView
-            android:id="@+id/tvStatus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Status: -"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="@color/textPrimary"
-            android:gravity="center" />
-
-        <!-- Target BMI Label -->
-        <TextView
-            android:id="@+id/tvTargetLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Set Your Target BMI"
-            android:textSize="20sp"
-            android:textColor="@color/primaryColor"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginTop="30dp" />
-
-        <!-- Target BMI Input -->
-        <EditText
-            android:id="@+id/etTargetBMI"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:hint="Enter target BMI (e.g., 22.0)"
-            android:textColor="@color/black"
-            android:textColorHint="@color/textHint"
-            android:background="@drawable/edittext_bg"
-            android:inputType="numberDecimal"
-            android:padding="10dp"
-            android:layout_marginTop="10dp" />
-
-        <!-- Save Target BMI -->
-        <Button
-            android:id="@+id/btnSaveTarget"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:text="SAVE TARGET BMI"
-            android:textStyle="bold"
-            android:backgroundTint="@color/primaryColor"
-            android:textColor="@color/white"
-            android:layout_marginTop="15dp" />
-
-        <!-- Recommended Label -->
-        <TextView
-            android:id="@+id/tvRecommended"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Your Personalized Plan"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/primaryColor"
-            android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:visibility="gone" />
-
-        <!-- View Diet Plan Button -->
-        <Button
-            android:id="@+id/btnViewDiet"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:text="VIEW DIET PLAN"
-            android:textStyle="bold"
-            android:backgroundTint="@color/primaryColor"
-            android:textColor="@color/white"
-            android:layout_marginTop="15dp"
-            android:visibility="gone" />
-
-        <!-- View Exercises Button -->
-        <Button
-            android:id="@+id/btnViewExercises"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:text="VIEW EXERCISES"
-            android:textStyle="bold"
-            android:backgroundTint="@color/primaryColor"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            android:visibility="gone" />
-
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>

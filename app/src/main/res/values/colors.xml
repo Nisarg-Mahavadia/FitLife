@@ -1,49 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- ======================= -->
-    <!-- BASIC SYSTEM COLORS     -->
-    <!-- ======================= -->
+    <!-- BASIC SYSTEM COLORS -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- ======================= -->
-    <!-- MATERIAL PURPLE (OLD)   -->
-    <!-- (KEEP for compatibility)-->
-    <!-- ======================= -->
+    <!-- MATERIAL PURPLE (unchanged for stability) -->
     <color name="purple_200">#BB86FC</color>
     <color name="purple_500">#6200EE</color>
     <color name="purple_700">#3700B3</color>
 
-    <!-- ======================= -->
-    <!-- MATERIAL TEAL           -->
-    <!-- ======================= -->
+    <!-- MATERIAL TEAL (unchanged base) -->
     <color name="teal_200">#03DAC5</color>
     <color name="teal_700">#018786</color>
 
-    <!-- ======================= -->
-    <!-- PROFESSIONAL THEME      -->
-    <!-- ======================= -->
-    <color name="primaryColor">#0A73FF</color>       <!-- Clean Blue (ActionBar, Buttons) -->
-    <color name="primaryDarkColor">#004FCC</color>   <!-- Darker Blue (StatusBar) -->
-    <color name="accentColor">#FFC107</color>        <!-- Gold Accent -->
+    <!-- CALM PROFESSIONAL FITNESS THEME -->
+    <color name="primaryColor">#0A66FF</color>        <!-- Soft UI accent (balanced blue) -->
+    <color name="primaryDarkColor">#0B2A5A</color>     <!-- Deep header/status bar tone -->
+    <color name="accentColor">#3DA5A0</color>         <!-- Soft Teal for limited highlights -->
 
-    <!-- ======================= -->
-    <!-- TEXT COLORS             -->
-    <!-- ======================= -->
-    <color name="textPrimary">#333333</color>        <!-- Dark Gray for text -->
-    <color name="textHint">#888888</color>           <!-- Soft hint color -->
+    <!-- TEXT COLORS -->
+    <color name="textPrimary">#0F1724</color>
+    <color name="textHint">#4A5568</color>
+    <color name="textHintLight">#888888</color>
 
-    <!-- ======================= -->
-    <!-- BUTTON COLORS           -->
-    <!-- ======================= -->
-    <color name="button_bg">#0A73FF</color>          <!-- Same as primary -->
-    <color name="button_pressed">#004FCC</color>     <!-- Darker shade -->
+    <!-- BUTTON COLORS -->
+    <color name="button_bg">#FFFFFF</color>            <!-- Buttons become white (professional) -->
+    <color name="button_pressed">#F2F4F7</color>        <!-- Slight press feedback -->
 
-    <!-- ======================= -->
-    <!-- OTHER COLORS            -->
-    <!-- ======================= -->
-    <color name="holo_blue_dark">#1976D2</color>     <!-- For legacy compatibility -->
-    <color name="backgroundLight">#F8F9FA</color>
+    <!-- BACKGROUNDS -->
+    <color name="backgroundLight">#F2F4F7</color>       <!-- Main screen ice gray -->
+    <color name="lightBlueTop">#E6F0FF</color>          <!-- Soft existing tone kept -->
+
+    <!-- BMI STATUS COLORS (muted and premium, not flashy green) -->
+    <color name="bmi_underweight">#F39C12</color>       <!-- Muted Amber -->
+    <color name="bmi_normal">#3DA5A0</color>            <!-- Soft Teal (not flashy) -->
+    <color name="bmi_overweight">#D95F59</color>        <!-- Muted Coral Red -->
+
+    <!-- OTHER COLORS (legacy values kept stable) -->
+    <color name="holo_blue_dark">#1976D2</color>
+    <color name="borderGray">#C8D6E2</color>            <!-- For outlines/dividers -->
+    <color name="statusSuccess">#5A6D8A</color>          <!-- Completed state color -->
+    <color name="statusError">#D95F59</color>            <!-- Error accent (muted) -->
+
+    <!-- APP BRAND COLORS (Professional, Not flashy) -->
+    <color name="brandBlue">#0A66FF</color>
+    <color name="brandNavy">#0037A8</color>
+
+    <!-- SECONDARY / ACCENTS -->
+    <color name="softGray">#E4E7EC</color>
+    <color name="lightSky">#E8F1FF</color> <!-- Only for top bar bg -->
+    <color name="cardSurface">#FFFFFF</color>
+    <!-- NEW UI COLORS -->
+    <color name="screenBg">#F2F6FF</color>
+    <color name="uiHeadline">#0A5CFF</color>
+    <color name="uiBorder">#0A5CFF</color>
+    <color name="uiPressed">#0040CC</color>
+    <color name="textWelcome">#2C3E50</color>   <!-- Dark navy-gray professional -->
+    <color name="textHighlight">#34495E</color> <!-- Soft charcoal for headings -->
+    <color name="textSection">#1B4F72</color>   <!-- Calm premium blue for sections -->
+    <color name="textSecondary">#607080</color>
+    <color name="blue">#1565C0</color>
+
 
 </resources>
