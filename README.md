@@ -4,6 +4,12 @@ FitLife is an Android application that helps users plan workouts and maintain a 
 
 ---
 
+## Screenshots
+
+To check the screenshots of working app open the Screenshots folder
+
+---
+
 ## Features
 
 - User authentication using Firebase
@@ -79,3 +85,4 @@ This project is for educational purposes.
 Application is available in playstore :
 https://play.google.com/store/apps/details?id=com.marwadiuniversity.fitlife
 download and register for free
+
